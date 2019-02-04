@@ -1,4 +1,4 @@
-const progressiveChecker = require('../../../src/ProgressiveChecker');
+const progressiveChecker = require('../../../src/ProgressiveChecker.js');
 const mocha = require('mocha');
 const chai = require('chai');
 const expect = chai.expect;
