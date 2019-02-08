@@ -1,15 +1,34 @@
 {
-  "name": "progessive-jpeg-dmeo",
+  "name": "is-progressive-jpeg",
   "version": "1.0.0",
-  "description": "",
+  "description": "A utility module which will check a image is progressive jpeg or not and provide scan count of the given image.",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
   "scripts": {
     "test": "mocha test --recursive"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saravanan-a-r/Progressive-JPEG-check.git"
+  },
+  "keywords": [
+    "Progressive",
+    "jpeg",
+    "isProgressive",
+    "scancount"
+  ],
+  "author": "Saravanan A R",
   "license": "ISC",
-  "dependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^5.2.0"
-  }
+  "bugs": {
+    "url": "https://github.com/saravanan-a-r/Progressive-JPEG-check/issues"
+  },
+  "homepage": "https://github.com/saravanan-a-r/Progressive-JPEG-check#readme"
 }

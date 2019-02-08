@@ -1,4 +1,4 @@
-const progressiveChecker = require('./src/ProgressiveChecker');
+const progressiveChecker = require('./src/is-progressive-jpeg.js');
 
 progressiveChecker.setImage('./test/integ-testing/src/test1.jpeg')
     .isProgressive()
