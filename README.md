@@ -1,6 +1,6 @@
 # is-progressive-jpeg
 
-A utility module which will check a image is progressive jpeg or not and provide scan count of the given image.
+A utility module which will check an image is progressive jpeg or not and provide scan count of the given image.
 
 # Installation
 You can use `npm` to download and install:
