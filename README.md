@@ -1,11 +1,15 @@
 # is-progressive-jpeg
 
-A utility module which will check an image is progressive jpeg or not and provide scan count of the given image.
+An utility module which will check an image is progressive jpeg or not and provide scan count of the given image.
 
 # Installation
+### As Node module:
 You can use `npm` to download and install:
-
 > npm install is-progressive-jpeg
+
+### As ES Module:
+Download the file `is-progressive-jpeg-es6.js` from the path `https://github.com/saravanan-a-r/Progressive-JPEG-check/tree/master/src`
+For Usage/Example, refer `Example` section.
 
 # API Documentation
 
@@ -27,10 +31,21 @@ This method **noOfScan()** will return promise object which will resolve with sc
     
 # Example
 
-Using Builder design pattern,
+Using it as Node module,
 
 	const progressiveChecker = require('ProgressiveChecker');
 	let checker = progressiveChecker.setImage('test1.jpeg');
+	checker.isProgressive().then( (result) => {
+		console.log('test1.jpeg :: isProgressive() : ' + result);
+	});
+	checker.noOfScan().then( (result) => {
+		console.log('test1.jpeg :: noOfScan() : ' + result);
+	});
+
+Using it as ES Module,
+
+    import ProgressiveChecker from "is-progressive-jpeg-es6";
+    let checker = ProgressiveChecker.setImage('test1.jpeg');
 	checker.isProgressive().then( (result) => {
 		console.log('test1.jpeg :: isProgressive() : ' + result);
 	});
